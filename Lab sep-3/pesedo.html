@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+    <style>
+        p::first-letter{
+            color: aqua;
+        }
+        p::selection{
+            color:rebeccapurple;
+            background-color: palevioletred;
+        }
+        h5::after{
+            content: " Sainky";
+        }
+        h5::before{
+            content: " Hii ";
+            color: cadetblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: large;
+            font-weight: 400;
+        }
+        .container{
+            border: 3px solid red;
+            height: 50vh;
+            width: 50vw;
+            font-size: 2px;
+        }
+        .child{
+            border: 3px solid black;
+            height: 50%;
+            width: 50%;
+            font-size: 2em;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem doloribus ab sed, aperiam molestias dicta, accusamus expedita porro unde iste quisquam, corporis cumque quis laborum vel rerum. Tempora, officiis quo.</p>
+    <h5>Good Morning</h5>
+    <div class="container">
+        <div class="child">
+            hello world
+        </div>
+    </div>
+
+</body>
+</html>

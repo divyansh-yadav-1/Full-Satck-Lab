@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* box-sizing: content-box; */
+
+        }
+        .container{
+            border: 2px solid red;
+            height: 30vh;
+            width: 30vw;
+            /* margin-bottom: 20px; */
+            margin: 50px 40px 30px 20px;
+            border-top-left-radius: 5px;
+            border-bottom-color: blue;
+            padding: 1%;
+            
+        }
+        .container1{
+            border: 2px solid green;
+            height: 30vh;
+            width: 30vw;
+        }
+        .container3{
+            box-sizing: content-box;
+            border: 2px solid red;
+            height: 30vh;
+            width: 30vw;
+
+        }
+        .container4{
+            box-sizing: border-box;
+            border: 2px solid green;
+            height: 30vh;
+            width: 30vw;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum unde ab, sit vero accusantium quasi debitis et. Dolorem, est quasi vel quaerat pariatur eius atque facere perspiciatis ex. A, dolorum.
+        
+    </div>
+    <div class="container4">
+            
+    </div>
+    
+</body>
+</html>
